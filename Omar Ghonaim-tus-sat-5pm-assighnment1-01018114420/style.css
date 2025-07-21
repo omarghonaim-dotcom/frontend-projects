@@ -1,0 +1,392 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container { 
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "area1 area1 area2 area2"
+    "area1 area1 area2 area2"
+    "area3 area4 area5 area6"
+    "area3 area4 area5 area6"
+    "area3 area4 area5 area6"
+    "area7 area8 area8 area6"
+    "area7 area8 area8 area6"
+    "area9 area10 area11 area11"
+    ;
+  }
+  .area1 { 
+            grid-area: area1;
+            background-color: #FFFFFF;
+            position: relative;
+    }
+    .area1 .disciption{
+        margin: 100px 50px auto;
+    }
+    .area1 .disciption h4{
+        color: #9FA3A7;
+        font-size: 12px;
+        font-family: "Montserrat",sans-serif;
+
+    }
+    .area1 .disciption .p1{
+        font-size: 22px;
+        line-height: 32px;
+        font-family: 'Arvo',sans-serif;
+        width: 270px;
+    }
+    .area1 .disciption .p2{
+        font-family:"Open Sans", sans-serif;
+        font-size: 14px;
+        color: #9FA3A7;
+    }
+  .area1 img{
+    width: 219px;
+    height: 333px;
+    position: absolute;
+    left: 600px;
+    bottom: 0;
+  } 
+
+  /*                      area2                           */
+.area2 { 
+    grid-area: area2; 
+    background-color: #F7F8F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.area2 h4{
+    color: #9FA3A7;
+    font-size: 12px;
+    font-family: "Montserrat",sans-serif;
+}
+.area2 p{
+    font-size: 48px;
+    line-height: 60px;
+    font-family: 'Arvo',sans-serif;
+    width: 500px;
+    text-align: center;
+}
+.area2 a{
+    color: #27b9c2;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+}
+  /*                                  area3                                      */
+.area3 { 
+    grid-area: area3; 
+    background-color: #F05638;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.area3 img{
+    width: 300px;
+    height: 150px;
+}  
+.area3 p{
+    font-family: 'Arvo',sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFFBFB;
+    width: 200px;
+    text-align: center;
+}
+.area3 a{
+    color: #ffc80a;
+    font-family:"Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 2px;
+    line-height: 26px;
+}
+  /*                                  area4                                      */
+  .area4 { 
+    grid-area: area4; 
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.discription2{
+    margin: 50px auto;
+}
+.area4 h4{
+    color: #9FA3A7;
+    font-family: "Montserrat",sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.area4 p{
+    font-family: "Arvo", sans-serif;
+    font-size: 22px;
+    width: 200px;
+}
+.area4 img{
+    width: 450px;
+    height: 150px;
+    position: absolute;
+    bottom: -0px;
+    right: 150px;
+}
+/*                                                   area5                                                     */
+.area5 { 
+    grid-area: area5; 
+    background-color: #FFFFFF;
+}
+.area5 p{
+    color: #9FA3A7;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    width: 350px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+.area5 a{
+    text-decoration: none;
+    color: #27b9c2;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2px;
+}
+/*                                  area6                                  */
+.area6 { 
+    grid-area: area6; 
+    background-color: #8F76BC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}  
+.area6 .content{
+    background-color: #8166B0;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+}
+.area6 .content .popular {
+    margin-left: 10px;
+    font-family:"Open Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+    width: 100px;
+    height: 25px;
+    background-color: #8B72B6;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+}
+.area6 .content img{
+    width: 216px;
+    height: 223px;
+}
+.area6 .content .meet{
+    font-family:'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.area6 .icloud{
+    font-family: "Arvo", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+}
+.area6 p{
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    width: 270px;
+    text-align: center;
+}
+.area6 button{
+    width: 150px;
+    height: 50px;
+    background-color: #FFC80A;
+    font-family: "Open Sans", sans-serif;
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 30px 30px 30px 30px;
+    border: none;
+    cursor: pointer;
+}
+ /*                     area7                       */
+.area7 {
+    grid-area: area7;
+    background-color:#F7F8F9 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.area7 img{
+    width: 250px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+.area7 h4{
+    font-family: "Arvo", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #333;
+}
+.area7 a{
+    color: #27b9c2;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+.area8 { 
+    grid-area: area8;
+    background-color: #93B6B7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+.area8 h4{
+    position: absolute;
+    left: 0px;
+    bottom: 370px;
+    margin-left: 20px;
+    background-color: #FA684F;
+    width: 100px;
+    height: 20px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 8px;
+    font-weight: 700; 
+    line-height: 20px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.area8 p{
+    color: #fff;
+    font-family: 'Arvo', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    width: 300px;
+    text-align: center;
+}
+.area8 .ux{
+    width: 700px;
+}
+.ipad{
+    position: absolute;
+    right: 150px;
+    top: 120px;
+    width: 850px;
+}
+.area9 { 
+    grid-area: area9;
+    background-color: #38D5F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.area9 img{
+    width: 50px;
+}
+.area9 .content{
+    width: 50%;
+    height: 250px;
+    background-color: #35CFED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+}
+.area9 p{
+    color: #fff;
+    font-family: "Arvo", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    width: 200px;
+    text-align: center;
+}
+.area10 { 
+    grid-area: area10;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.area10 h4{
+    background-color: #7BC424;
+    width: 80px;
+    height: 20px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 8px;
+    font-weight: 700; 
+    line-height: 20px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.area10 p{
+    color: #333;
+    font-family: "Arvo", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+}
+.area11 { 
+    grid-area: area11;
+    background-color: #2C2C2C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.area11 img{
+    width: 300px;
+    margin-right: 50px;
+}
+.area11 p{
+    margin-left: 50px;
+    font-family: "Arvo", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+    width: 300px;
+}
