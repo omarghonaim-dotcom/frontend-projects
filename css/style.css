@@ -1,0 +1,449 @@
+html {
+    scroll-behavior: var(--smooth-sroll);
+}
+:root{
+    --main-font:'Poppins', sans-serif;
+    --second-main-font:"Source Sans 3", sans-serif;
+    --overlay-color: rgba(24, 200, 221, 0.9);
+    --smooth-sroll:scroll-behavior: smooth;
+}
+.myp{
+    width: 665px;
+}
+.myp2{
+    width: 400px;
+}
+.mt-50{
+    margin-top: 50px;
+}
+.w-10{
+    width: 100px;
+}
+.transfrom-scale{
+    transform: scale(1.1);
+}
+.bg-image{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/bg-image-28.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-image2{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/bg-image-29.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carousel-item h1{
+    font-size: 100px;
+    font-weight: 700;
+    font-family: var(--main-font);
+}
+.carousel-item p{
+    font-size: 18px;
+    font-family: var(--main-font);
+    font-weight: 400;
+}
+.carousel-item .btn-info{
+    width: 125px;
+    height: 50px;
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 600;
+}
+.contact-btn{
+    border: 1px solid white;
+    color: white;
+    width: 115px;
+    height: 50px;
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 500ms;
+}
+.contact-btn:hover{
+    border: none;
+    color: #232323;
+    background-color: white;
+}
+.carousel-item .hire{
+    width: 100px;
+    height: 50px;
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  left: -45px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  border: 2px solid white;
+  transform: translateX(100%);
+  color: white;
+  border-left: none;
+}
+
+.carousel-controls .carousel-control-prev,
+.carousel-controls .carousel-control-next {
+  position: static;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  transition: all 500ms;
+}
+
+.carousel-controls .carousel-control-prev-icon,
+.carousel-controls .carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.carousel-controls .carousel-control-prev:hover,
+.carousel-controls .carousel-control-next:hover{
+    transform: translateX(0);
+    background-color: white;
+    color: #232323;
+}
+.navbar {
+    border-bottom: 2px solid black;
+}
+.navbar-links{
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 500;
+}
+.navbar-icons{
+    border-left: 2px solid black;
+    line-height: 40px;
+}
+.navbar-icons ul li{
+    margin-right: 15px;
+}
+.hero{
+    font-family: var(--main-font);
+    font-size: 13px;
+    font-weight: 500;
+}
+.about-paragraph p{
+    font-family: var(--second-main-font);
+    font-size: 24px;
+    font-weight: 300;
+}
+.content-button button{
+    font-size: 11px;
+    font-weight: 500;
+    font-family: var(--main-font);
+    transition: all 300ms;
+}
+.content-button button:hover{
+    background-color: black;
+    color: white;
+}
+
+.about-paragraph span::after{
+    content: "|";
+    animation: dynamic 3s infinite alternate ease;
+}
+@keyframes dynamic {
+    0% {
+        content: "|";
+    }
+    3% {
+        content: "s|";
+    }
+    5% {
+        content: "so|";
+    }
+    7% {
+        content: "sof|";
+    }
+    10% {
+        content: "soft|";
+    }
+    13% {
+        content: "softw|";
+    }
+    15% {
+        content: "softwa|";
+    }
+    17% {
+        content: "softwar|";
+    }
+    20% {
+        content: "software|";
+    }
+    25% {
+        content: "softwar|";
+    }
+    27% {
+        content: "softwa|";
+    }
+    30% {
+        content: "softw|";
+    }
+    32% {
+        content: "soft|";
+    }
+    35% {
+        content: "sof|";
+    }
+    37% {
+        content: "so|";
+    }
+    40% {
+        content: "s|";
+    }
+
+    45% {
+        content: "a|";
+    }
+    47% {
+        content: "ap|";
+    }
+    50% {
+        content: "app|";
+    }
+    52% {
+        content: "apps|";
+    }
+    57% {
+        content: "app|";
+    }
+    60% {
+        content: "ap|";
+    }
+    62% {
+        content: "a|";
+    }
+    65% {
+        content: "w|";
+    }
+    67% {
+        content: "we|";
+    }
+    70% {
+        content: "web|";
+    }
+    72% {
+        content: "webs|";
+    }
+    75% {
+        content: "websi|";
+    }
+    77% {
+        content: "websit|";
+    }
+    80% {
+        content: "website|";
+    }
+    100% {
+        content: "websites|";
+    }
+
+}
+
+/* Heading */
+.heading p {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--second-main-font);
+  color: #787878;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.visibility {
+  opacity: 0.2;
+  color: #787878;
+  font-size: 80px;
+  font-weight: 700;
+  font-family: var(--main-font);
+  position: absolute;
+  top: -130px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.absolute {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 38px;
+}
+
+.content-cards {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+
+}
+
+.person-card {
+  position: relative;
+  width: 280px;
+  overflow: hidden;
+}
+
+.person-card img {
+  width: 100%;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: var(--overlay-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 18px;
+  color: white;
+}
+
+.person-info {
+  color: white;
+}
+
+.person-info h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.person-info h5 {
+  margin: 5px 0 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+
+.person-card:hover .overlay {
+  transform: translateY(0);
+}
+
+#Services{
+    background-color: #626262;
+}
+.services-header h5{
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.service-content h1{
+    font-family: var(--main-font);
+    font-size: 38px;
+    font-weight: 700;
+}
+.service-content .position-absolute{
+    top: 39px;
+    left: 10px;
+}
+.service-content p{
+    font-family: var(--second-main-font);
+    font-size: 16px;
+    font-weight: 400;
+}
+.service-content .visibility-letter{
+    font-size: 80px;
+    color: #6B6B6B;
+}
+
+.services{
+    display: flex;
+    align-items: flex-end;
+}
+.support li,.advantadges li{
+    font-family: var(--second-main-font);
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 15px;
+}
+#Pricing{
+    background-color: #F7F7F7;
+}
+.card{
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+     margin-right: 20px;
+}
+
+
+
+.color [data-bs-target] {
+  background-color: #00bcd4;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+}
+
+.prev-ico,
+.ico {
+  color: gray;
+  transition: all 500ms;
+  font-size: 30px;
+}
+.prev-ico:hover,
+.ico:hover{
+      color: #00bcd4;
+}
+.visibility-letter-G{
+    font-family: var(--main-font);
+    font-size: 80px;
+    font-weight: 700;
+    color: #787878;
+    opacity: 0.1;
+}
+.title{
+    position: absolute;
+    bottom: 100px;
+    font-family: var(--main-font);
+    font-size: 38;
+    font-weight: 700;
+}
+.contact-heading p{
+    font-family: var(--second-main-font);
+    font-size: 18px;
+    font-weight: 400;
+}
+.form-group input {
+    border: 2px solid #ccc; /* الحد العادي */
+    padding: 8px;
+    outline: none;
+}
+.form-control:focus {
+  border-color: black !important;   /* الحد أسود */
+    box-shadow: 0 0 0 0rem rgba(0,0,0,.25) !important;
+}
+.form-group label{
+    font-family: var(--main-font);
+    font-size: 13px;
+    font-weight: 500;
+}
+.form-group button{
+   background-color: #00D5EE;
+}
+.form-group button span{
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 400;
+}
